@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Traditional Game | MichaelSinanta</title>
+        <link rel="icon" href="/assets/icon.ico"/>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+ 
+    <nav class="fixed w-full bg-[#000000] bg-opacity-60 z-10 lg:h-[90px] md:h-[90px] sm:h-[90px] z-100">
+        <div class="flex font-['Open Sans'] px-4">
+            <div class="flex justify-between">
+                <div class="lg:ml-[107px] flex space-x-[142px]">
+                    
+                    <div class="hidden md:flex items-center">
+                        <p class="lg:text-[24px] text-white font-[700]">LOGO</p>
+                    </div>
+
+                    <!-- Primary Navbar items -->
+
+                    <div class="hidden md:flex items-center space-x-14 font-[700]">
+                        <a href="" class="lg:text-[12px] font-['Open Sans'] text-white hover:text-green-500 transition duration-300">HOME</a>
+                        <a href="" class="lg:text-[12px] font-['Open Sans'] text-white hover:text-green-500 transition duration-300">WORK</a>
+                        <a href="" class="lg:text-[12px] font-['Open Sans'] text-white hover:text-green-500 transition duration-300">CONTACT</a>
+                        <a href="" class="lg:text-[12px] font-['Open Sans'] text-white hover:text-green-500 transition duration-300 w-[100px]">ABOUT ME</a>
+                    </div>
+                    
+                </div>
+                <!-- Secondary Navbar items -->
+                <div class="md:flex flex items-center space-x-3 font-[700] lg:pl-[50%] md:pl-[20%] h-[90px]">
+                    <a href="" class="lg:text-[12px] text-white hover:text-green-500 transition duration-300 w-[70px]">SIGN UP</a>
+                    <a href="" class="lg:text-[12px] text-white hover:text-green-500 transition duration-300">LOGIN</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden fixed flex items-center pl-[90%] fixed h-[90px] lg:hidden">
+                    <button class="outline-none mobile-menu-button">
+                    <svg class=" w-6 h-6 text-white hover:text-green-500 "
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li class="active"><a href="index.html" class="block font-['Open Sans'] text-sm px-5 py-4 text-white bg-black bg-opacity-60 hover:bg-green-500 transition duration-300">HOME</a></li>
+                <li><a href="#services" class="block font-['Open Sans'] text-sm px-5 py-4 text-white bg-black bg-opacity-60 hover:bg-green-500 transition duration-300">WORK</a></li>
+                <li><a href="#about" class="block font-['Open Sans'] text-sm px-5 py-4 text-white bg-black bg-opacity-60 hover:bg-green-500 transition duration-300">CONTACT</a></li>
+                <li><a href="#contact" class="block font-['Open Sans'] text-sm px-5 py-4 text-white bg-black bg-opacity-60 hover:bg-green-500 transition duration-300">ABOUT ME</a></li>
+            </ul>
+        </div>
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </nav>
+
+    <div id="main">
+        <div class="relative w-full h-full bg-no-repeat bg-cover">
+            <img src="/assets/main-bg.jpg" alt="main-background">
+            <div class="absolute text-white inset-0 lg:top-[313px] md:top-[113px] top-[113px]">
+                <h1 class="font-['Arial'] lg:text-[72px] md:text-[40px] text-[35px] text-center font-[700]">PLAY TRADITIONAL GAME</h1>
+                <h2 class="lg:py-[57px] py-[10px] font-['Arial'] lg:text-[24px] md:text-[24px] text-center">Experience new traditional game play</h2>
+                <div class="flex justify-center py-[17px]">
+                    <button class="bg-[#FFB548] hover:bg-green-700 font-bold lg:py-5 lg:px-[80px] md:py-4 md:px-[60px] py-2 px-[20px] text-[#1A1917] text-[16px] items-center">PLAY NOW</button>
+                </div>
+                <div class="flex flex-col absolute inset-x-0 bottom-0 items-center mb-8">
+                  <p class="font-['Open Sans'] lg:text-[12px] font-[700] text-[8px]">THE STORY</p>
+                  <img class="lg:w-[20.25px] w-[10.25px] mt-2" src="/assets/scroll-down.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="gallery">
+        <div class="relative w-full h-full bg-no-repeat bg-cover">
+            <img src="/assets/the-games-bg.jpg" alt="main-background">
+            <div class="absolute text-5xl text-white lg:ml-[79px] ml-[20px] lg:top-[254px] top-[20px]">
+              <h2 class="py-[20px] font-['Arial'] lg:text-[24px] font-[400] text-sm">What’s so special?</h2>
+              <p class="font-['Arial'] lg:text-[56px] font-[400] pt-1 text-md">
+                THE GAMES
+              </p>
+            </div>
+            <div class="absolute lg:inset-y-0 lg:right-0 lg:mr-[140px] mr-[10px] lg:top-[30%] sm:hidden md:hidden lg:block">
+              <div id="default-carousel" class="relative" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="overflow-hidden relative lg:w-[858px] lg:h-[477px]">
+                     <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
+                        <img src="/assets/rockpaperstrategy-1600.jpg" class="block absolute top-1/2 left-1/2 lg:w-[858px] lg:h-[477px] object-cover -translate-x-1/2 -translate-y-1/2" alt="">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/assets/addition/picture1.jpg" class="block absolute top-1/2 left-1/2 lg:w-[858px] lg:h-[477px]  object-cover -translate-x-1/2 -translate-y-1/2" alt="">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/assets/addition/picture2.jpg" class="block absolute top-1/2 left-1/2 lg:w-[858px] lg:h-[477px] object-cover -translate-x-1/2 -translate-y-1/2" alt="">
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <img src="/assets/addition/picture3.jpeg" class="block absolute top-1/2 left-1/2 lg:w-[858px] lg:h-[477px] object-cover -translate-x-1/2 -translate-y-1/2" alt="">
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <img src="/assets/addition/picture4.jpg" class="block absolute top-1/2 left-1/2 lg:w-[858px] lg:h-[477px] object-cover -translate-x-1/2 -translate-y-1/2" alt="">
+                    </div>                  
+                </div>
+                <!-- Slider indicators -->
+                <div class="hidden lg:block">
+                <div class="flex absolute bottom-5 left-1/2 z-30 space-x-10 -translate-x-1/2">
+                    <button type="button" class="w-[14px] h-[14px] rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-[14px] h-[14px] rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-[14px] h-[14px] rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                    <button type="button" class="w-[14px] h-[14px] rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                    <button type="button" class="w-[14px] h-[14px] rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button" class="flex absolute top-0 -left-20 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10">
+                        <img src="/assets/switch-left.svg" alt="">
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="flex absolute top-0 -right-20 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10">
+                      <img src="/assets/switch-right.svg" alt="">
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+              </div>
+              </div>
+              <script src="/node_modules/flowbite/dist/flowbite.js"></script>
+            </div>
+        </div>
+    </div>
+    <div id="default-carousel" class="absolute top-[500px] md:top-[800px] inset-x-0 lg:hidden sm:block" data-carousel="static">
+      <!-- Carousel wrapper -->
+      <div class="overflow-hidden relative h-56 md:h-96">
+           <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
+              <img src="/assets/rockpaperstrategy-1600.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="/assets/addition/picture1.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="/assets/addition/picture2.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/assets/addition/picture3.jpeg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="/assets/addition/picture4.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+      </div>
+      </div>
+      <!-- Slider indicators -->
+      <div class="flex absolute bottom-5 left-1/2 z-30 space-x-12 -translate-x-1/2">
+        <button type="button" class="w-[14px] h-[14px] rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-[14px] h-[14px] rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-[14px] h-[14px] rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-[14px] h-[14px] rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-[14px] h-[14px] rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+      </div>
+      <!-- Slider controls -->
+      <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+          <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10">
+            <img src="/assets/switch-left.svg" alt="">
+            <span class="sr-only">Previous</span>
+          </span>
+      </button>
+      <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+          <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10">
+            <img src="/assets/switch-right.svg" alt="">
+            <span class="sr-only">Next</span>
+          </span>
+      </button>
+      <script src="/node_modules/flowbite/dist/flowbite.js"></script>
+    </div>
+    
+    <div id="features">
+        <div class="relative w-full h-full bg-no-repeat bg-cover">
+            <img src="/assets/features.jpg" alt="main-background">
+            <div class="absolute text-5xl text-white inset-y-0 right-0 lg:mr-[320px] lg:top-[15%] top-12">
+              <h2 class="py-[20px] font-['Arial'] lg:text-[24px] text-[18px] font-[400]">What’s so special?</h2>
+              <p class="font-['Arial'] lg:text-[56px] text-[22px] font-[400] lg:pt-1">
+                FEATURES
+              </p>
+              <div class="flex flex-col items-center mr-[320px]">
+                <div class="lg:mt-[45px] mt-[10px] w-4 h-4 rounded-full bg-white">
+                  <div class="ml-10">
+                    <p class="font-['Arial'] lg:text-[24px] text-[16px] font-[400] text-[#FFB548] w-[362.52px]">TRADITIONAL GAMES</p>
+                    <p class="font-['Open Sans'] lg:text-[18px] text-[14px] font-[400] text-[#FFFFFF] mt-4 lg:w-[362.52px] w-[250px]">
+                      If you miss your childhood, we provide many traditional games here
+                    </p>
+                  </div>
+                </div>
+                <div class="relative w-[1.96px] lg:h-[141.03px] h-[55px] bg-[#FFFFFF]">
+                <div class="relative lg:mt-[141.03px] mt-[55px] -ml-[7.1px] w-4 h-4 rounded-full border-2 fill-transparent border-white">
+                  <p class="ml-10 -mt-1 font-['Arial'] lg:text-[24px] text-[18px] font-[400] text-[#FFB548] w-[362.52px]">GAME SUIT</p>
+                </div>
+                <div class="relative lg:mt-[69px] mt-[20px] -ml-[7.1px] w-4 h-4 rounded-full border-2 fill-transparent border-white">
+                  <p class="ml-10 -mt-1 font-['Arial'] lg:text-[24px] text-[18px] font-[400] text-[#FFB548] w-[362.52px]">TBD</p>
+                </div>
+              </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="requirements">
+      <div class="relative w-full h-full bg-no-repeat bg-cover bottom-[1px]">
+          <img class="block" src="/assets/requirements.png" alt="main-background">
+          <div class="absolute inset-x-0 top-0 font-['Arial'] text-white text-[14px] text-center font-[400] lg:mt-36 mt-3">Can My Computer Run This Game?</div>
+          <div class="absolute text-5xl text-white lg:ml-[120px] ml-[30px] lg:top-[227px] top-[10px]">
+            <h2 class="lg:py-[20px] py-1 mt-10 font-['Arial'] lg:text-[56px] text-[32px] font-[400] lg:w-[633.19px] w-[100px]">SYSTEM REQUIREMENTS</h2>
+            <div class="row lg:mt-[30px] mt-[1px] lg:block md:block sm:hidden">
+              <div class="col-sm">
+                  <table class="table border-[#979797] border-[1px]">
+                      <tbody>
+                          <tr>
+                              <td class="lg:p-5 p-1 border-[#979797] border-[1px]">
+                                  <h4 class="font-['Arial'] lg:text-[24px] text-[16px] font-[400] text-[#FFB548]">OS:</h4>
+                                  <p class="lg:w-[257.65px] w-[100px] font-['Open Sans'] lg:text-[18px] text-[10px] font-[400]">
+                                      Windows 7 64-bit only<br>
+                                      (No OSX support at this time)
+                                  </p>
+                              </td>
+                              <td class="lg:p-5 p-1 border-[#979797] border-[1px]">
+                                  <h4 class="font-['Arial'] lg:text-[24px] text-[16px] font-[400] text-[#FFB548]">PROCESSOR:</h4>
+                                  <p class="lg:w-[257.65px] w-[100px]  font-['Open Sans'] lg:text-[18px] text-[10px] font-[400]">
+                                      Intel Core 2 Duo @ 2.4 GHZ or<br>
+                                      AMD Athlon X2 @ 2.8 GHZ
+                                  </p>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td class="lg:p-5 p-1 border-[#979797] border-[1px]">
+                                  <h4 class="font-['Arial'] lg:text-[24px] text-[16px] font-[400] text-[#FFB548]">MEMORY:</h4>
+                                  <p class="lg:w-[257.65px] w-[100px]  font-['Open Sans'] lg:text-[18px] text-[10px] font-[400]">
+                                      4 GB RAM
+                                  </p>
+                              </td>
+                              <td class="lg:p-5 p-1 border-[#979797] border-[1px]">
+                                  <h4 class="font-['Arial'] lg:text-[24px] text-[16px] font-[400] text-[#FFB548]">STORAGE:</h4>
+                                  <p class="lg:w-[257.65px] w-[100px]  font-['Open Sans'] lg:text-[18px] text-[10px] font-[400]">
+                                      8 GB available space
+                                  </p>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td class="lg:p-5 p-1 border-[#979797] border-[1px]" colspan="2">
+                                  <h4 class="font-['Arial'] lg:text-[24px] text-[16px] font-[400] text-[#FFB548]">GRAPHICS:</h4>
+                                  <p class="lg:w-[514.31px] w-[100px]  font-['Open Sans'] lg:text-[18px] text-[10px] font-[400]">
+                                      NVIDIA GeForce GTX 660 2GB or <br>
+                                      AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
+                                  </p>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div id="top-score">
+      <div class="relative w-full h-full bg-no-repeat bg-cover bottom-[2px]">
+          <img class="absolute" src="/assets/top-score-bg.png" alt="main-background">
+          <img src="/assets/top-score-bg(2).png" alt="main-background">
+          <div class="absolute text-5xl text-white lg:ml-[120px] ml-[20px] lg:top-[340px] top-[5px]">
+            <h2 class="py-[20px] font-['Arial'] lg:text-[56px] text-sm font-[400]">TOP SCORES</h2>
+            <p class="font-['Arial'] lg:text-[18px] text-sm font-[400] lg:w-[410.93px] w-[100px] pt-2">
+              This top score from various games provided<br>on this platform
+            </p>
+            <button type="submit" class="lg:mt-[30px] lg:w-[260px] lg:h-[60px] w-36 h-12 bg-[#FFB548] text-[#1A1917] text-[16px] font-[700] p-auto ml-auto rounded">
+              see more
+            </button>
+          </div>
+
+          <div class="flex flex-col hidden md:block lg:block">
+              <div class="absolute text-white inset-y-0 right-0 mr-[140px] lg:top-[15%] md:top-[12px] md:-top-[3px]">
+                <div class="bg-[#FFFFFF] bg-opacity-10 rounded-md w-[452.59px] h-[182.94px]">
+                  <div class="p-5">
+                    <div class="flex mb-4">
+                        <div class="w-14 h-14 rounded-full relative">
+                            <img src="/assets/evan-lahti.jpg" alt="img" class="absolute w-full h-full rounded-full" />
+                            <img src="/assets/ellipse-orange.png" alt="img" class="ml-2 mt-1 w-full h-full" />
+                        </div>
+                        <div class="ml-[22px] flex flex-col">
+                          <h5 class="font-['Arial'] lg:text-[24px] font-[400] text-[#FFB548]">Evan Lahti</h5>
+                          <p class="font-['Arial'] lg:text-[18px] font-[400] text-[#FFFFFF] text-opacity-50 -mt-2">PC Gamer</p>
+                        </div>
+                        <a href="">
+                          <img class="w-[18.03px] h-[14px] ml-[200px] mt-2" src="/assets/twitter-card.png" alt="">
+                        </a>
+                    </div>
+                    <p class="font-['Arial'] lg:text-[18px] font-[400] text-white ">
+                      “One of my gaming highlights of the year.”<br>
+                      <span class="font-['Arial'] lg:text-[14px] font-[400] text-white text-opacity-50">June 18, 2021</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="absolute text-white inset-y-0 right-0 mr-[140px] lg:top-[37%] lg:right-32 md:top-[200px]">
+                <div class="bg-[#FFFFFF] bg-opacity-10 rounded-md w-[452.59px] h-[182.94px]">
+                  <div class="p-5">
+                    <div class="flex mb-4">
+                        <div class="w-14 h-14 rounded-full relative">
+                            <img src="/assets/jada-griffin.jpg" alt="img" class="absolute w-full h-full rounded-full" />
+                            <img src="/assets/ellipse-orange.png" alt="img" class="ml-2 mt-1 w-full h-full" />
+                        </div>
+                        <div class="ml-[22px] flex flex-col">
+                          <h5 class="font-['Arial'] lg:text-[24px] font-[400] text-[#FFB548]">Jada Griffin</h5>
+                          <p class="font-['Arial'] lg:text-[18px] font-[400] text-[#FFFFFF] text-opacity-50 -mt-2">Nerdreactor</p>
+                        </div>
+                        <a href="">
+                          <img class="w-[18.03px] h-[14px] ml-[180px] mt-2" src="/assets/twitter-card.png" alt="">
+                        </a>
+                    </div>
+                    <p class="font-['Arial'] lg:text-[18px] font-[400] text-white lg:w-[400px] w-[300px]">
+                      “The next big thing in the world of streaming and survival games.”<br>
+                      <span class="font-['Arial'] lg:text-[14px] font-[400] text-white text-opacity-50">July 10, 2021</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="absolute text-white inset-y-0 right-0 mr-[140px] lg:top-[58%] lg:right-10 md:-top-[200px]">
+                <div class="bg-[#FFFFFF] bg-opacity-10 rounded-md w-[452.59px] h-[182.94px]">
+                  <div class="p-5">
+                    <div class="flex mb-4">
+                        <div class="w-14 h-14 rounded-full relative">
+                            <img src="/assets/aaron-williams.jpg" alt="img" class="absolute w-full h-full rounded-full" />
+                            <img src="/assets/ellipse-orange.png" alt="img" class="ml-2 mt-1 w-full h-full" />
+                        </div>
+                        <div class="ml-[22px] flex flex-col">
+                          <h5 class="font-['Arial'] lg:text-[24px] font-[400] text-[#FFB548]">Aaron Williams</h5>
+                          <p class="font-['Arial'] lg:text-[18px] font-[400] text-[#FFFFFF] text-opacity-50 -mt-2">Uproxx</p>
+                        </div>
+                        <a href="">
+                          <img class="w-[18.03px] h-[14px] ml-[150px] mt-2" src="/assets/twitter-card.png" alt="">
+                        </a>
+                    </div>
+                    <p class="font-['Arial'] lg:text-[18px] font-[400] text-white ">
+                      “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”<br>
+                      <span class="font-['Arial'] lg:text-[14px] font-[400] text-white text-opacity-50">December 24, 2018</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="subscribe-footer">
+      <div class="relative w-full h-full bg-no-repeat bg-cover -mt-[4px]">
+        <img class="absolute" src="/assets/addition/footer.png" alt="main-background">
+        <div class="relative bg-[#080A0B] inset-x-0 -top-[90px]">
+          <div class="absolute flex flex-row lg:left-[15%]">
+          <img class="w-[30%]" src="/assets/skull.png" alt="skulls">
+          <div class="text-white lg:top-[50%] top-[20px]">
+            <h1 class="font-['Arial'] lg:text-[24px] md:text-[24px] font-[400]">Want to stay in<br>touch?</h1>
+            <div class="relative flex flex-col lg:-space-y-6">
+              <h2 class="font-['Arial'] lg:text-[65px] md:text-[61px] text-md font-[400]">NEWSLETTER</h2>
+              <h2 class="font-['Arial'] lg:text-[65px] md:text-[61px] text-md font-[400]">SUBSCRIBE</h2>
+            </div>
+            <p class="font-['Arial'] lg:text-[18px] md:text-[14px] text-sm font-[400] lg:w-[644.96px] w-[300px]">
+              In order to start receiving our news, all you have to do is enter your email address. 
+              Everything else will be taken care of by us. 
+              We will send you emails containing information about game. 
+              We don’t spam.
+            </p>
+            <br>
+            <div class="flex flex-row">
+              <div type="submit" class="lg:w-[366px] lg:h-[60px] w-[188px] h-[50px] bg-[#FFFFFF14] bg-opacity-80 text-white rounded flex flex-col items-start lg:p-3 p-1 lg:pl-5 pl-2">
+                  <p class="font-['Open Sans'] font-[400] text-gray-400 lg:text-[14px] text-[10px]">Your email address</p>
+                  <input class="font-['Open Sans'] font-[400] -ml-[10px] -mt-2 text-[#FFB548] placeholder-[#FFB548] lg:text-[18px] text-[14px] border-none bg-transparent" type="text" name="gmail" placeholder="youremail@binar.co.id">
+              </div>
+              <button type="submit" class="lg:w-[260px] lg:h-[60px] w-[130px] h-[50px] bg-[#FFB548] text-[#1A1917] text-[16px] font-[700] p-auto ml-auto rounded">
+                  Subscribe now
+              </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="absolute hidden lg:block inset-x-0 lg:top-[570px] md:top-[490px] bg-[#080A0B] dark:bg-gray-900">
+            <div class="mx-[120px] text-sm text-white flex flex-row space-x-12 justify-end py-2">
+              <a class="hover:opacity-25" href="#main">MAIN</a> 
+              <a class="hover:opacity-25" href="#gallery">ABOUT</a>
+              <a class="hover:opacity-25" href="#features">GAME FEATURES</a> 
+              <a class="hover:opacity-25" href="#requirements">SYSTEM REQUIREMENTS</a>
+              <a class="hover:opacity-25" href="#top-score">QUOTES</a>
+              <a href="">
+                <img class="hover:opacity-25" src="/assets/facebook.svg" alt="">
+              </a>
+              <a href="">
+                <img class="hover:opacity-25" src="/assets/twitter.svg" alt="">
+              </a>
+              <a href="">
+                <img class="hover:opacity-25" src="/assets/youtube.svg" alt="">
+              </a>
+              <a href="">
+                <img class="hover:opacity-25" src="/assets/twitch.svg" alt="">
+              </a>
+              
+            </div>
+            <hr class="lg:mx-[120px] my-[24.23px] border-[#FFFFFF] border-t-[0.87px] lg:my-[24.23px]" />
+            <div class="sm:flex sm:items-center sm:justify-between lg:mx-[120px]">
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"> © 2018 Your Games, Inc. All Rights Reserved
+                </span>
+                <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                    <span class="text-sm text-white sm:text-center uppercase">
+                      <a class="hover:opacity-25" href="">Privacy Policy</a> | 
+                      <a class="hover:opacity-25" href="">Terms of Services</a> | 
+                      <a class="hover:opacity-25" href="">Code of Conduct</a> 
+                    </span>
+                </div>
+            </div>
+          </div>
+
+          <div class="absolute lg:hidden block inset-x-0 lg:top-[570px] md:top-[490px] top-[300px] bg-[#080A0B] dark:bg-gray-900">
+            <div class="text-sm text-white flex flex-row inset-0 justify-center pl-5 pr-5">
+              <div class="flex flex-col items-center">
+                <div class="flex space-x-10">
+                  <a class="hover:opacity-25" href="#main">MAIN</a> 
+                  <a class="hover:opacity-25" href="#gallery">ABOUT</a>
+                  <a class="hover:opacity-25" href="#features">GAME FEATURES</a> 
+                  <a class="hover:opacity-25" href="#requirements">SYSTEM REQUIREMENTS</a>
+                  <a class="hover:opacity-25" href="#top-score">QUOTES</a>
+                </div>
+                <div class="flex flex-row space-x-10 mt-5">
+                  <a href="">
+                    <img class="hover:opacity-25" src="/assets/facebook.svg" alt="">
+                  </a>
+                  <a href="">
+                    <img class="hover:opacity-25" src="/assets/twitter.svg" alt="">
+                  </a>
+                  <a href="">
+                    <img class="hover:opacity-25" src="/assets/youtube.svg" alt="">
+                  </a>
+                  <a href="">
+                    <img class="hover:opacity-25" src="/assets/twitch.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <hr class="lg:mx-[120px] my-[24.23px] border-[#FFFFFF] border-t-[0.87px] lg:my-[24.23px]" />
+            <div class="sm:flex sm:items-center sm:justify-between lg:mx-[120px] pr-3 pl-3 pb-3">
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"> © 2018 Your Games, Inc. All Rights Reserved
+                </span>
+                <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                    <span class="text-sm text-white sm:text-center uppercase">
+                      <a class="hover:opacity-25" href="">Privacy Policy</a> | 
+                      <a class="hover:opacity-25" href="">Terms of Services</a> | 
+                      <a class="hover:opacity-25" href="">Code of Conduct</a> 
+                    </span>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</html>
