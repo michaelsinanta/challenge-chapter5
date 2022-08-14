@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors | MichaelSinanta</title>
+    <link rel="icon" href="/chapter-4/assets/logo.png"/>
+    <link rel="stylesheet" href="/css/output.css">
+    <script defer src="/chapter-4/game-script.js"></script>
+</head>
+<body class="bg-[#9C835F]">
+    <!-- Navigation Bar -->
+    <nav class="flex flex-row h-[110px] w-full font-['Open Sans'] items-center justify-start lg:pl-10 md:pl-7 pl-3">
+        <a href="/chapter-3/index.html" class="text-[#724C21] lg:text-[72px] md:text-[62px] text-[55px] font-bold lg:mr-10 mr-5 hover:scale-110"><</a>
+        <img class="lg:w-[72px] w-[50px] lg:mr-10 mr-5" src="/chapter-4/assets/logo.png" alt="">
+        <p class="text-[#F9B23D] lg:text-[36px] text-[30px] font-[700]">ROCK PAPER SCISSORS</p>
+    </nav>
+
+    <div class="flex justify-center items-center h-[600px]">
+        <div class="flex flex-row self-stretch w-full h-full flex-none max-w-screen-md">
+            <!-- Human Section -->
+            <div class="flex flex-col basis-1/3 items-center justify-start">
+                <div class="h-[20%] flex">
+                    <p class="lg:text-[36px] md:text-[30px] text-[26px] self-center font-bold uppercase tracking-widest">player 1</p>
+                </div>
+                <div class="h-[60%] flex flex-none flex-col grow-0">
+                    <div id="human-rock" class="h-[50%] p-4 flex justify-center items-center" onclick="gameReady.saveObject(this)">
+                        <button class="h-full mx-auto hover:scale-110">
+                            <img class="w-[100px]" src="assets/batu.png" alt="">
+                        </button>
+                    </div>
+                    <div id="human-paper" class="h-[50%] p-4 flex justify-center items-center" onclick="gameReady.saveObject(this)">
+                        <button class="h-full mx-auto hover:scale-110">
+                            <img class="w-[80px]" src="assets/kertas.png" alt="">
+                        </button>
+                    </div>
+                    <div id="human-scissor" class="h-[50%] p-4 flex justify-center items-center" onclick="gameReady.saveObject(this)">
+                        <button class="h-full mx-auto hover:scale-110">
+                            <img class="w-[80px]" src="assets/gunting.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- VS and Restart Button -->
+            <div class="flex flex-col basis-1/3 items-stretch">
+                <div class="basis-4/5 flex justify-center items-center">
+                    <p id="vs" class="text-[#BD0000] lg:text-[90px] text-[5rem] font-bold tracking-widest">VS</p>
+                    <div id="result" class="hidden rounded-md p-8 md:p-10 rotate-[-30deg] uppercase flex justify-center items-center">
+                        <p id="human-win"
+                           class="hidden bg-[#4C9654] text-[22px] md:text-[2rem] text-center text-white font-bold lg:w-[200px] md:w-[200px] w-[100px]">Player 1<br>win
+                        </p>
+                        <p id="computer-win"
+                           class="hidden bg-[#4C9654] text-[22px] md:text-[2rem] text-center text-white font-bold lg:w-[200px] md:w-[200px] w-[100px]">com<br>win
+                        </p>
+                        <p id="draw"
+                           class="hidden flex bg-[#035B0C] text-[22px] md:text-[2rem] text-center justify-center items-center text-white font-bold lg:w-[200px] lg:h-[100px] md:w-[200px] md:h-[100px] w-[100px]">draw
+                        </p>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center h-[20%]" onclick="gameReady.restart()">
+                    <button id="restart-button" class="h-[50%] hover:scale-110">
+                        <img class="h-full" src="assets/refresh.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <!-- Computer Section -->
+            <div class="h-full flex flex-col basis-1/3 items-center justify-start grow-0">
+                <div class="h-[20%] flex flex-none">
+                    <p class="lg:text-[36px] md:text-[30px] text-[26px] self-center font-bold uppercase tracking-widest">com</p>
+                </div>
+                <div class="h-[60%] flex flex-none flex-col grow-0">
+                    <div id="com-rock" class="h-[50%] p-4">
+                        <img class="w-[100px] mx-auto hover:scale-110" src="assets/batu.png" alt="">
+                    </div>
+                    <div id="com-paper" class="h-[50%] p-4">
+                        <img class="w-[80px] mx-auto hover:scale-110" src="assets/kertas.png" alt="">
+                    </div>
+                    <div id="com-scissor" class="h-[50%] p-4">
+                        <img class="w-[80px] mx-auto hover:scale-110" src="assets/gunting.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
