@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Traditional Game | Login</title>
+        <link rel="icon" href="/chapter-3/assets/icon.ico"/>
+        <link rel="stylesheet" href="/css/output.css">
+    </head>
+    <div id="main" href="/login">
+        <div class="relative w-full h-full bg-no-repeat bg-cover">
+            <img src="/chapter-3/assets/main-bg.jpg" alt="main-background">
+            <div class="flex flex-col">
+                <h1>Username</h1>
+                <input type="username" name="username" class="form-control" placeholder="Enter your username" required />
+                <h1>Password</h1>
+                <input type="password" name="password" class="form-control" placeholder="Enter your password" required />
+                <button type="submit">Login</button>
+                <p class="text-center mt-3"><%= message %></p>
+            </div>
+        </div>
+    </div>
+</html>
